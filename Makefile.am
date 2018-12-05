@@ -159,30 +159,30 @@ tests_SOURCES += \
     test/tool_tests.c
 endif
 instdir=$(prefix)/bin
-inst_PROGRAMS = bitcointool
-bitcointool_LDADD = libbtc.la
-bitcointool_SOURCES = \
+inst_PROGRAMS = acmtool
+acmtool_LDADD = libbtc.la
+acmtool_SOURCES = \
     src/tools/bitcointool.c
-bitcointool_CFLAGS = $(libbtc_la_CFLAGS)
-bitcointool_CPPFLAGS = -I$(top_srcdir)/src
-bitcointool_LDFLAGS = -static
+acmtool_CFLAGS = $(libbtc_la_CFLAGS)
+acmtool_CPPFLAGS = -I$(top_srcdir)/src
+acmtool_LDFLAGS = -static
 
 if WITH_NET
-inst_PROGRAMS += bitcoin-send-tx
-bitcoin_send_tx_LDADD = libbtc.la $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-bitcoin_send_tx_SOURCES = \
+inst_PROGRAMS += acm-send-tx
+acm_send_tx_LDADD = libbtc.la $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+acm_send_tx_SOURCES = \
     src/tools/bitcoin-send-tx.c
-bitcoin_send_tx_CFLAGS = $(libbtc_la_CFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-bitcoin_send_tx_CPPFLAGS = -I$(top_srcdir)/src
-bitcoin_send_tx_LDFLAGS = -static
+acm_send_tx_CFLAGS = $(libbtc_la_CFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+acm_send_tx_CPPFLAGS = -I$(top_srcdir)/src
+acm_send_tx_LDFLAGS = -static
 
-inst_PROGRAMS += bitcoin-spv
-bitcoin_spv_LDADD = libbtc.la
-bitcoin_spv_SOURCES = \
+inst_PROGRAMS += acm-spv
+acm_spv_LDADD = libbtc.la
+acm_spv_SOURCES = \
     src/tools/bitcoin-spv.c
-bitcoin_spv_CFLAGS = $(libbtc_la_CFLAGS)
-bitcoin_spv_CPPFLAGS = -I$(top_srcdir)/src
-bitcoin_spv_LDFLAGS = -static
+acm_spv_CFLAGS = $(libbtc_la_CFLAGS)
+acm_spv_CPPFLAGS = -I$(top_srcdir)/src
+acm_spv_LDFLAGS = -static
 endif
 
 endif

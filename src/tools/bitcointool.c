@@ -68,12 +68,12 @@ static void print_version()
 static void print_usage()
 {
     print_version();
-    printf("Usage: bitcointool (-m|-keypath <bip_keypath>) (-k|-pubkey <publickey>) (-p|-privkey <privatekey>) (-t[--testnet]) (-r[--regtest]) -c <command>\n");
+    printf("Usage: acmtool (-m|-keypath <bip_keypath>) (-k|-pubkey <publickey>) (-p|-privkey <privatekey>) (-t[--testnet]) (-r[--regtest]) -c <command>\n");
     printf("Available commands: pubfrompriv (requires -p WIF), addrfrompub (requires -k HEX), genkey, hdgenmaster, hdprintkey (requires -p), hdderive (requires -m and -p) \n");
     printf("\nExamples: \n");
     printf("Generate a testnet privatekey in WIF/HEX format:\n");
-    printf("> bitcointool -c genkey --testnet\n\n");
-    printf("> bitcointool -c pubfrompriv -p KzLzeMteBxy8aPPDCeroWdkYPctafGapqBAmWQwdvCkgKniH9zw6\n\n");
+    printf("> acmtool -c genkey --testnet\n\n");
+    printf("> acmtool -c pubfrompriv -p KzLzeMteBxy8aPPDCeroWdkYPctafGapqBAmWQwdvCkgKniH9zw6\n\n");
 }
 
 static bool showError(const char* er)

@@ -1,6 +1,6 @@
 dnl require autoconf 2.68 (AS_ECHO/AS_ECHO_N)
 AC_PREREQ([2.68])
-AC_INIT([libbtc],[0.1],[https://github.com/jonasschnelli/libbtc/issues],[libbtc])
+AC_INIT([acmbtc],[0.1],[https://github.com/Actinium-project/libacm/issues],[libacm])
 AC_CONFIG_HEADERS([src/libbtc-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])

@@ -63,12 +63,12 @@ static void print_version()
 static void print_usage()
 {
     print_version();
-    printf("Usage: bitcoin-send-tx (-i|-ips <ip,ip,...]>) (-m[--maxpeers] <int>) (-t[--testnet]) (-r[--regtest]) (-d[--debug]) (-s[--timeout] <secs>) <txhex>\n");
+    printf("Usage: acm-send-tx (-i|-ips <ip,ip,...]>) (-m[--maxpeers] <int>) (-t[--testnet]) (-r[--regtest]) (-d[--debug]) (-s[--timeout] <secs>) <txhex>\n");
     printf("\nExamples: \n");
     printf("Send a TX to random peers on testnet:\n");
-    printf("> bitcoin-send-tx --testnet <txhex>\n\n");
+    printf("> acm-send-tx --testnet <txhex>\n\n");
     printf("Send a TX to specific peers on mainnet:\n");
-    printf("> bitcoin-send-tx -i 127.0.0.1:8333,192.168.0.1:8333 <txhex>\n\n");
+    printf("> acm-send-tx -i 127.0.0.1:14443,192.168.0.1:14443 <txhex>\n\n");
 }
 
 static bool showError(const char* er)
