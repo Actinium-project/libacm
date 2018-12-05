@@ -99,15 +99,15 @@ This tool can be used to download & scan the Actinium blockchain.
 
 ##### Sync up to the chain tip and stores all headers in headers.db (quit once synced):
 
-./acm-spv scan
+    > ./acm-spv scan
 
 ##### Sync up to the chain tip and give some debug output during that process:
 
-./acm-spv -d scan
+    > ./acm-spv -d scan
 
 ##### Sync up, show debug info, don't store headers in file (only in memory), wait for new blocks:
 
-./acm-spv -d -f 0 -c scan
+    > ./acm-spv -d -f 0 -c scan
 
 How to Build
 ----------------
