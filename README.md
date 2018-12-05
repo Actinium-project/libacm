@@ -40,7 +40,7 @@ The acmtool CLI
 
 ##### Generate the public key and p2pkh address from a WIF encoded private key
 
-    /acmtool -command pubfrompriv -p KwmAqzEiP7nJbQi6ofQywSEad4j5b9BXDJvyypQDDLSvrV6wACG8
+    ./acmtool -command pubfrompriv -p KwmAqzEiP7nJbQi6ofQywSEad4j5b9BXDJvyypQDDLSvrV6wACG8
     > pubkey: 023d86ca58e2519cce1729b4d36dfe5a053ad5f4ae6f7ef9360bee4e657f7e41c9
     > p2pkh address: 1N5ZkjyabcZLLHMweJrSkn3qedsPGzAx9m
 
